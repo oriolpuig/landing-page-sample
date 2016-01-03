@@ -280,3 +280,6 @@ typings/
 
 ## JSON DB sample data
 db/*
+
+## Ignore dist folder
+dist/
