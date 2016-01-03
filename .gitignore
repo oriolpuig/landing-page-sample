@@ -281,5 +281,7 @@ typings/
 ## JSON DB sample data
 db/*
 
-## Ignore dist folder
+## Specific ignore files & folders
 dist/
+web.config
+Web.config
