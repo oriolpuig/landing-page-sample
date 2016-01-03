@@ -1,6 +1,6 @@
 # Landing page sample
 Landing page sample project.<br>
-**Demo**: (https://landing-page-sample.herokuapp.com)
+**Demo**: (http://landing-page-sample.azurewebsites.net)
 
 ## Requirements
 
