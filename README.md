@@ -1,10 +1,10 @@
-# Landing page
+# Landing page sample
 Landing page sample project.<br>
 **Demo**: (https://landing-page-sample.herokuapp.com)
 
 ## Requirements
 
-It must be installed  [Nodejs](https://nodejs.org/en/download/)  and [Bower](http://bower.io/#install-bower) globally..
+It must be installed  [Nodejs](https://nodejs.org/en/download/)  and [Bower](http://bower.io/#install-bower) globally.
 
 ```
 npm instal -g bower
@@ -15,13 +15,13 @@ npm instal -g bower
 Clone repository:
 
 ```
-git clone https://github.com/oriolpuig/landing-page.git
+git clone https://github.com/oriolpuig/landing-page-sample.git
 ```
 
-Go to landing-page folder: 
+Go to landing-page-sample folder: 
 
 ```
-cd landing-page
+cd landing-page-sample
 ```
 
 Install dependencies:
@@ -34,6 +34,5 @@ bower install
 To run application:
 
 ```
-npm run gulp
 npm start
 ```
