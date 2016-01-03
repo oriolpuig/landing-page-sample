@@ -1,0 +1,17 @@
+/* Font Awesome Styles */
+@import 'font-awesome/variables';
+@import '../../bower_components/components-font-awesome/scss/font-awesome';
+
+/* Bootstrap Styles*/
+/*@import 'bootstrap/variables';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'bootstrap/modern-ui';
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }*/
+
+/* Materialize Styles */
+@import 'materialize/variables';
+@import '../../bower_components/materialize/sass/materialize.scss';
+@import 'materialize/custom';
+
+/* Custom Styles */

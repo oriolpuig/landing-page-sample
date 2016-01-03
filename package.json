@@ -1,0 +1,40 @@
+{
+  "name": "landing-page-sample",
+  "description": "Sample of a landing page.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&npm run gulp&&node index.js",
+    "startProd": "bower install&&set NODE_ENV=production&&npm run gulpProd&&node index.js",
+    "gulp": "gulp clean && gulp dev",
+    "gulpProd": "gulp clean && gulp prod",
+    "json": "json-server --watch db\\db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "authors": [
+    "Oriol Puig <oriol.puig90@gmail.com> (https://github.com/oriolpuig)"
+  ],
+  "dependencies": {
+    "express": "^4.13.3",
+    "json-server": "^0.8.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "wiredep": "^3.0.0",
+    "jshint": "^2.8.0"
+  },
+  "engines": {
+    "node": "4.2.1"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}

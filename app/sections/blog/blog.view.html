@@ -1,0 +1,94 @@
+<div class="container">
+
+    <!-- Header -->
+    <div class="row">
+        <div class="col s12">
+            <h2>Blog</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col s12 l8">
+            <!-- Post card -->
+            <div class="card" ng-repeat="post in blog.posts">
+                <a ui-sref="404">
+                    <div class="card-image">
+                        <img class="img-responsive img-hover" ng-src="{{blog.getImageSrc(post.featured_image.guid)}}" alt="">
+                    </div>
+                </a>
+                <div class="card-content">
+                    <span class="card-title">{{post.title}}</span>
+                    <br>
+                    <small ng-show="post.terms.category !== undefined"><i class="fa fa-folder"></i> {{blog.getCategories(post.terms.category)}} | </small>
+                    <small ng-show="post.date !== undefined"><i class="fa fa-clock-o"></i> {{post.date}} | </small>
+                    <small ng-show="post.author !== undefined"><i class="fa fa-user"></i> {{post.author.first_name + " " + post.author.last_name}}</small>
+                    <br>
+                    <br>
+                    <div ng-bind-html="post.excerpt"></div>
+                </div>
+                <div class="card-action right-align">
+                    <a ui-sref="404">Read More <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="previous">
+                    <a ui-sref="404">&larr; Older</a>
+                </li>
+                <li class="next">
+                    <a ui-sref="404">Newer &rarr;</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col s12 l4">
+
+            <!-- Blog Search -->
+            <div class="row">
+                <form class="col s12">
+                    <div class="row valign-wrapper">
+                        <div class="input-field col s12">
+                            <input id="first_name" type="text" class="validate black-text" required>
+                            <label for="first_name">Search</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Blog Categories -->
+            <div class="row">
+                <div class="col s12">
+                    <h4>Blog Categories</h4>
+                </div>
+                <div class="col s12 l6">
+                    <ul class="list-unstyled">
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 l6">
+                    <ul class="list-unstyled">
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                        <li><a ui-sref="404">Category Name</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
