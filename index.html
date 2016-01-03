@@ -1,0 +1,50 @@
+<!DOCTYPE html ng-app="myApp" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <cs-menu></cs-menu>
+    <main>
+        <div ui-view></div>
+    </main>
+    <cs-footer></cs-footer>
+</body>
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
+<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+<!-- endbower -->
+
+<script src="/app/app.module.js"></script>
+<script src="/app/app.config.js"></script>
+
+<script src="/app/services/services.module.js"></script>
+<script src="/app/services/posts/posts.module.js"></script>
+
+<script src="/app/components/components.module.js"></script>
+<script src="/app/components/menu/menu.directive.js"></script>
+<script src="/app/components/footer/footer.directive.js"></script>
+
+<script src="/app/sections/home/home.module.js"></script>
+<script src="/app/sections/about/about.module.js"></script>
+<script src="/app/sections/blog/blog.module.js"></script>
+
+
+</html>
