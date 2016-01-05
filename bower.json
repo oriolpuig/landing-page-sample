@@ -1,41 +1,42 @@
 {
-    "name": "landing-page-sample",
-    "description": "Sample of a landing page.",
-    "main": "gulpfile.js",
-    "authors": [
-        "Oriol Puig <oriol.puig90@gmail.com> (https://github.com/oriolpuig)"
-    ],
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/oriolpuig/landing-page"
-    },
-    "dependencies": {
-        "jquery": "*",
-        "angular": "*",
-        "angular-ui-router": "*",
-        "angular-bootstrap": "*",
-        "angular-sanitize": "*",
-        "angular-materialize": "*",
-        "materialize": "*"
-    },
-    "devDependencies": {
-        "bootstrap-sass": "*",
-        "components-font-awesome": "*"
-    },
-    "overrides": {
-        "materialize": {
-            "main": [
-                "dist/js/materialize.js"
-            ]
-        }
+  "name": "landing-page-sample",
+  "description": "Sample of a landing page.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Oriol Puig <oriol.puig90@gmail.com> (https://github.com/oriolpuig)"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oriolpuig/landing-page"
+  },
+  "dependencies": {
+    "jquery": "*",
+    "angular": "*",
+    "angular-ui-router": "*",
+    "angular-bootstrap": "*",
+    "angular-sanitize": "*",
+    "angular-materialize": "*",
+    "materialize": "*",
+    "ngmap": "~1.16.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "*",
+    "components-font-awesome": "*"
+  },
+  "overrides": {
+    "materialize": {
+      "main": [
+        "dist/js/materialize.js"
+      ]
     }
+  }
 }

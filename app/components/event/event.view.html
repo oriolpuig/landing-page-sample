@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-image">
+        <img data-ng-show="{{showImage && !showMap}}" data-ng-src="{{event.image}}">
+        <cs-map data-ng-show="{{showMap && !showImage}}" data-event="event"></cs-map>
+    </div>
+    <div class="card-content">
+        <span class="card-title light-green-text text-accent-4">{{event.name}}</span>
+        <p data-ng-show="summary">{{event.description}}</p>
+    </div>
+    <div class="card-action">
+        <div class="row">
+            <div class="col s4 center-align">
+                <span target="_blank" class="btn red white-text"><i class="fa fa-ticket"></i> {{event.yes_rsvp_count}} RSVP</span>
+            </div>
+            <div class="col s4 center-align" data-ng-class="{}">
+                <a href="http://www.meetup.com/es/Techdencias/events/{{event.id}}/" target="_blank" class="btn light-blue accent-4">More Info</a>
+            </div>
+            <div class="col s4 center-align">
+                <a data-ng-show="!summary" class="btn light-green accent-4" ui-sref="event({id:event.id})">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>

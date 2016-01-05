@@ -74,4 +74,4 @@ gulp.task('db', function () {
 
 gulp.task('prod', ['sass', 'styles', 'fonts', 'bower', 'db', 'app']);
 
-gulp.task('dev', ['sass']);
+gulp.task('dev', ['sass', 'bower-dev']);

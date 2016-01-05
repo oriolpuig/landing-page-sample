@@ -45,7 +45,7 @@
 <div class="">
     <div class="row">
         <div class="col s12">
-            <h2 class="page-header center-align light-green-text text-accent-4">About Us</h2>
+            <h2 class=" center-align light-green-text text-accent-4">About Us</h2>
         </div>
         <div class="col s4">
             <div class="row-fluid valign-wrapper light-green-text text-accent-4">
@@ -119,7 +119,7 @@
     <div parallax><img src="http://www.techdencias.net/wp-content/uploads/2015/05/PalauMacaya.jpg"></div>
     <div class="row">
         <div class="col s12">
-            <h2 class="page-header center-align light-green-text text-accent-4">Hightlights</h2>
+            <h2 class=" center-align light-green-text text-accent-4">Hightlights</h2>
         </div>
         <div class="col s4">
             <div class="card">
@@ -182,7 +182,7 @@
 <div class="team-members-section">
     <div class="row">
         <div class="col s12">
-            <h2 class="page-header center-align light-green-text text-accent-4">Our Team</h2>
+            <h2 class=" center-align light-green-text text-accent-4">Our Team</h2>
         </div>
 
         <div class="col s3">
@@ -360,7 +360,7 @@
 <div class="collaborate-section">
     <div class="row">
         <div class="col s12 center-align">
-            <h2 class="page-header light-green-text text-accent-4">Collaborate</h2>
+            <h2 class=" light-green-text text-accent-4">Collaborate</h2>
         </div>
     </div>
     <div class="row">
@@ -424,6 +424,60 @@
                     </div>
                 </div>
             </a>
+        </div>
+    </div>
+</div>
+
+<div class="social-networking-section">
+    <div class="row">
+        <div class="col s12 l6">
+            <div class="row">
+                <h2 class="light-green-text text-accent-4 center-align">Twitter</h2>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l6" data-ng-repeat="tweet in home.tweets">
+                    <div class="card-panel grey lighten-5 z-depth-1">
+                        <div class="row valign-wrapper">
+                            <div class="col s2">
+                                <img class="responsive-img" ng-src="{{tweet.user.profile_image_url}}" />
+                            </div>
+                            <div class="col s10">
+                                <span class="black-text" ng-bind-html="tweet.text | linky"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="row">
+                <h2 class="light-green-text text-accent-4 center-align">Meetup</h2>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <cs-event   data-event="home.event" 
+                                data-summary="false" data-show-image="false" data-show-map="true"></cs-event>
+                </div>
+                <!--<div class="col s12 m12 l6">
+                    <cs-map data-event="home.event"></cs-map>
+                </div>
+                <div class="col s12 m12 l6">
+                    <div class="row">
+                        <div class="col s12">
+                            <h5 class="light-green-text text-accent-4">{{home.event.name}}</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <a href="#" target="_blank" class="btn red white-text"><i class="fa fa-ticket"></i> {{home.event.yes_rsvp_count}} RSVP</a>
+                        </div>
+                        <div class="col s6">
+                            <a ui-sref="event({id:home.event.id})" class="btn light-green accent-4 white-text">READ MORE</a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
         </div>
     </div>
 </div>

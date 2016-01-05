@@ -10612,9 +10612,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-/*
-    Custom Materialize Styles
-*/
+/*******************************************************************
+ *   Custom Materialize Styles
+ *******************************************************************/
+/*******************************************************************
+ *   GENERAL
+ *******************************************************************/
 body {
   display: flex;
   min-height: 100vh;
@@ -10623,30 +10626,33 @@ body {
 main {
   flex: 1 0 auto; }
 
-/* label color */
-.input-field input,
-.input-field textarea {
-  color: #FFF; }
+/*******************************************************************
+ *   INPUT-FIELD
+ *******************************************************************/
+.input-field {
+  /* label color */
+  /* label focus color */
+  /* valid color */
+  /* label underline focus color */ }
+  .input-field input,
+  .input-field textarea {
+    color: #FFF; }
+  .input-field input[type=text]:focus + label,
+  .input-field input[type=email]:focus + label,
+  .input-field textarea.materialize-textarea:focus + label {
+    color: #64dd17; }
+  .input-field input[type=text].valid,
+  .input-field input[type=email].valid,
+  .input-field textarea.materialize-textarea.valid {
+    border-bottom: 1px solid #64dd17;
+    box-shadow: 0 1px 0 0 #64dd17; }
+  .input-field input:not([type]):focus:not([readonly]), .input-field input[type=text]:focus:not([readonly]), .input-field input[type=password]:focus:not([readonly]), .input-field input[type=email]:focus:not([readonly]), .input-field input[type=url]:focus:not([readonly]), .input-field input[type=time]:focus:not([readonly]), .input-field input[type=date]:focus:not([readonly]), .input-field input[type=datetime-local]:focus:not([readonly]), .input-field input[type=tel]:focus:not([readonly]), .input-field input[type=number]:focus:not([readonly]), .input-field input[type=search]:focus:not([readonly]), .input-field textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #64dd17;
+    box-shadow: 0 1px 0 0 #64dd17; }
 
-/* label focus color */
-.input-field input[type=text]:focus + label,
-.input-field input[type=email]:focus + label,
-.input-field textarea.materialize-textarea:focus + label {
-  color: #64dd17; }
-
-/* label underline focus color */
-input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #64dd17;
-  box-shadow: 0 1px 0 0 #64dd17; }
-
-/* valid color */
-.input-field input[type=text].valid {
-  border-bottom: 1px solid #64dd17;
-  box-shadow: 0 1px 0 0 #64dd17; }
-
-/* invalid color */
-/* icon prefix focus color */
-/* NAV MENU - SLIDE-NAV */
+/*******************************************************************
+ *   NAV MENU - SLIDE-NAV
+ *******************************************************************/
 nav a.button-collapse {
   padding-left: 20px; }
 
@@ -10654,7 +10660,9 @@ nav ul.side-nav a:hover {
   /* Exclude dark hover on slide-nav menu (only mobile style) */
   background-color: transparent !important; }
 
-/* SECTIONS */
+/*******************************************************************
+ *   SECTIONS
+ *******************************************************************/
 .highlights-section {
   /* CARDS */ }
   .highlights-section .card {
@@ -10663,5 +10671,11 @@ nav ul.side-nav a:hover {
       height: 30px; }
       .highlights-section .card .card-icon span {
         top: -60px; }
+
+.social-networking-section cs-map ng-map {
+  height: 250px; }
+
+header.event-section cs-map ng-map {
+  height: 400px; }
 
 /* Custom Styles */

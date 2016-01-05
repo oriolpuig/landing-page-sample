@@ -6,10 +6,13 @@
                 'ngSanitize',
                 'ui.router',
                 'ui.materialize',
+                'ngMap',
 
                 'myApp.home',
                 'myApp.about',
                 'myApp.blog',
+                'myApp.events',
+                'myApp.event',
 
                 'myApp.components',
                 'myApp.services'])
