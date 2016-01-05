@@ -23,6 +23,18 @@
                         controller: "aboutController",
                         controllerAs: 'about'
                     })
+                    .state('events', {
+                        url:'/events',
+                        templateUrl: 'app/sections/events/events.view.html',
+                        controller: "eventsController",
+                        controllerAs: 'events'
+                    })
+                     .state('event', {
+                        url:'/event/:id',
+                        templateUrl: 'app/sections/event/event.view.html',
+                        controller: "eventController",
+                        controllerAs: 'event'
+                    })
                     .state('blog', {
                         url: '/blog',
                         templateUrl: 'app/sections/blog/blog.view.html',

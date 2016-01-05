@@ -1,7 +1,10 @@
-/*
-    Custom Materialize Styles
-*/
+/*******************************************************************
+ *   Custom Materialize Styles
+ *******************************************************************/
 
+/*******************************************************************
+ *   GENERAL
+ *******************************************************************/
 body {
     display: flex;
     min-height: 100vh;
@@ -12,39 +15,42 @@ main {
     flex: 1 0 auto;
 }
    
-
- /* label color */
-.input-field input,
-.input-field textarea {
-    color: #FFF;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label,
-.input-field input[type=email]:focus + label,
-.input-field textarea.materialize-textarea:focus + label {
-    color: #64dd17;
-}
-/* label underline focus color */
-input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #64dd17;
-    box-shadow: 0 1px 0 0 #64dd17;
-}
-/* valid color */
-.input-field input[type=text].valid {
-    border-bottom: 1px solid #64dd17;
-    box-shadow: 0 1px 0 0 #64dd17;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-    // border-bottom: 1px solid #64dd17;
-    // box-shadow: 0 1px 0 0 #64dd17;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-    // color: #000;
+/*******************************************************************
+ *   INPUT-FIELD
+ *******************************************************************/
+.input-field{
+    
+     /* label color */
+    input,
+    textarea{
+        color: #FFF;
+    }
+    
+    /* label focus color */
+    input[type=text]:focus + label,
+    input[type=email]:focus + label,
+    textarea.materialize-textarea:focus + label{
+        color: #64dd17;
+    }
+    
+    /* valid color */
+    input[type=text].valid,
+    input[type=email].valid,
+    textarea.materialize-textarea.valid {
+        border-bottom: 1px solid #64dd17;
+        box-shadow: 0 1px 0 0 #64dd17;
+    }
+    
+    /* label underline focus color */
+    input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+        border-bottom: 1px solid #64dd17;
+        box-shadow: 0 1px 0 0 #64dd17;
+    }
 }
    
-/* NAV MENU - SLIDE-NAV */
+/*******************************************************************
+ *   NAV MENU - SLIDE-NAV
+ *******************************************************************/
 nav{
     
     a{
@@ -63,7 +69,11 @@ nav{
         }
 }
 
-/* SECTIONS */
+
+/*******************************************************************
+ *   SECTIONS
+ *******************************************************************/
+
 .highlights-section{
     /* CARDS */
     .card{
@@ -73,6 +83,24 @@ nav{
             height: 30px;
             span{
                 top:-60px;
+            }
+        }
+    }
+}
+
+.social-networking-section{
+    cs-map{
+        ng-map{
+            height: 250px;
+        }
+    }
+}
+
+header {
+    &.event-section{    
+        cs-map{
+            ng-map{
+                height: 400px;
             }
         }
     }
